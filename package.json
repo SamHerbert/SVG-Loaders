@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/SamHerbert/SVG-Loaders",
   "devDependencies": {
-    "gulp": "^3.8.10"
+    "gulp": "^3.8.10",
+    "gulp-svgmin": "^0.4.8"
   }
 }
