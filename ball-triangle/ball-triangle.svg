@@ -1,8 +1,8 @@
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/KKTBij -->
-<!-- Todo: add easing, fix width and height -->
-<svg width="56" height="57" viewBox="0 0 56 57" xmlns="http://www.w3.org/2000/svg">
+<!-- Todo: add easing -->
+<svg width="57" height="57" viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
     <g fill="none" fill-rule="evenodd">
-        <g transform="translate(1 1)" stroke="#fff" stroke-width="2">
+        <g transform="translate(1 1)" stroke-width="2">
             <circle cx="5" cy="50" r="5">
                 <animate attributeName="cy"
                      begin="0s" dur="2.2s"
