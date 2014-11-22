@@ -6,8 +6,6 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <style>
         html {
-            font-family: "Open Sans";
-            font-weight: 300;
             height: 100%;
             background: #3023ae;
             background: -moz-linear-gradient(-45deg,  #3023ae 0%, #c86dd7 100%);
@@ -15,10 +13,15 @@
             background: -webkit-linear-gradient(-45deg,  #3023ae 0%,#c86dd7 100%);
             background: -o-linear-gradient(-45deg,  #3023ae 0%,#c86dd7 100%);
             background: -ms-linear-gradient(-45deg,  #3023ae 0%,#c86dd7 100%);
-            background: linear-gradient(135deg,  #3023ae 0%,#c86dd7 100%); /* W3C */
+            background: linear-gradient(135deg,  #3023ae 0%,#c86dd7 100%);
+            background-attachment: fixed;
         }
         body {
-
+            font-family: "Open Sans";
+            font-weight: 300;
+        }
+        a {
+            color: #fff;
         }
 
         ul {
@@ -115,6 +118,13 @@
             margin-left: 25px;
         }
 
+        .attr {
+            color: #fff;
+            text-align: center;
+            font-size: 0.875rem;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 
@@ -138,6 +148,12 @@
     <div class="actions">
         <a href="https://github.com/SamHerbert/SVG-Loaders" target="_blank" class="download">Download</a>
         <a href="#" target="_blank" class="tweet">Tweet</a>
+    </div>
+    <div style="clear: both"></div>
+
+
+    <div class="attr">
+        Made by <a href="http://twitter.com/sherb">Sam</a>. For everyone.
     </div>
 </body>
 
