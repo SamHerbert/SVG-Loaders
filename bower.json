@@ -1,0 +1,19 @@
+{
+  "name": "SVG-Loaders",
+  "version": "0.0.0",
+  "homepage": "https://github.com/SamHerbert/SVG-Loaders",
+  "authors": [
+    "Sam Herbert <sam@samherbert.net>"
+  ],
+  "description": "Loading icons and small animations built purely in SVG, no CSS or JS.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "public"
+  ]
+}
