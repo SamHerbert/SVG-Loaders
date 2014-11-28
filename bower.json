@@ -16,5 +16,13 @@
     "tests",
     "site-assets",
     "index.html"
+  ],
+  "keywords": [
+    "progress",
+    "svg",
+    "loaders",
+    "loading",
+    "spinners"
+    "animated"
   ]
 }
