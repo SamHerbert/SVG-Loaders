@@ -1,9 +1,12 @@
-Check out an example of all the loaders:
+Example
+===========
+All loaders may be viewed at:
 
 http://samherbert.net/svg-loaders
 
 Usage
 ===========
+[Download](https://github.com/SamHerbert/SVG-Loaders/archive/master.zip)
 
 ```html
 <img src="svg-loaders/puff.svg" />
@@ -16,3 +19,7 @@ An icon's color can be manipulated by changing the `fill` attribute in the SVG f
 ```
 
 Note: Not all browsers support SVG, or more specifically, animated SVGs. Check (http://caniuse.com/#feat=svg-smil) to make sure you're good to go. If not, you may want to implement a fallback.
+
+Minify
+===========
+All SVG files are fairly small in size, but you can make them even smaller by minifying with something like [SVGO](https://github.com/svg/svgo).
