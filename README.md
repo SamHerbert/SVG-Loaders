@@ -1,6 +1,6 @@
 Example
 ===========
-All loaders may be viewed at:
+All loaders may be previewed at:
 
 http://samherbert.net/svg-loaders
 
