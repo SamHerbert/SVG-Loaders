@@ -6,7 +6,7 @@ http://samherbert.net/svg-loaders
 
 Usage
 ===========
-[Download](https://github.com/SamHerbert/SVG-Loaders/archive/master.zip)
+[Download](https://github.com/SamHerbert/SVG-Loaders/archive/master.zip) or `bower install svg-loaders`
 
 ```html
 <img src="svg-loaders/puff.svg" />
