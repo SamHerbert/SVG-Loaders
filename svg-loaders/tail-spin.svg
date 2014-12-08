@@ -15,7 +15,7 @@
                     type="rotate"
                     from="0 18 18"
                     to="360 18 18"
-                    dur=".9s"
+                    dur="0.9s"
                     repeatCount="indefinite" />
             </path>
             <circle fill="#fff" cx="36" cy="18" r="1">
@@ -24,7 +24,7 @@
                     type="rotate"
                     from="0 18 18"
                     to="360 18 18"
-                    dur=".9s"
+                    dur="0.9s"
                     repeatCount="indefinite" />
             </circle>
         </g>
