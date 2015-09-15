@@ -4,7 +4,7 @@ All loaders may be previewed at:
 
 http://samherbert.net/svg-loaders
 
-NOTE: Chrome 45 has deprecated the use of SMIL animations
+NOTE: Chrome 45 has [deprecated](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/5o0yiO440LM/59rZqirUQNwJ) the use of SMIL animations
 
 Usage
 ===========
