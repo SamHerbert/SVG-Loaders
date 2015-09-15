@@ -4,6 +4,8 @@ All loaders may be previewed at:
 
 http://samherbert.net/svg-loaders
 
+NOTE: Chrome 45 has deprecated the use of SMIL animations
+
 Usage
 ===========
 [Download](https://github.com/SamHerbert/SVG-Loaders/archive/master.zip) or `bower install svg-loaders`
