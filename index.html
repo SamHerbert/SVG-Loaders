@@ -112,6 +112,31 @@
             margin-top: 20px;
         }
 
+        svg#oval {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            stroke-width: 2px;
+            fill: none;
+            stroke: #fff;
+        }
+
+        svg#oval circle {
+            stroke-opacity: 0.5
+        }
+
+        @-webkit-keyframes ovalRoll { to { transform: rotate(360deg) } }
+        @-moz-keyframes ovalRoll { to { transform: rotate(360deg) } }
+        @-o-keyframes ovalRoll { to { transform: rotate(360deg) } }
+        @keyframes ovalRoll { to { transform: rotate(360deg) } }
+
+        svg#oval path {
+            transform-origin: left bottom;
+            -webkit-animation: ovalRoll 1s infinite linear;
+            -moz-animation: ovalRoll 1s infinite linear;
+            -o-animation: ovalRoll 1s infinite linear;
+            animation: ovalRoll 1s infinite linear;
+        }
     </style>
 </head>
 
@@ -130,7 +155,10 @@
             <img src="svg-loaders/hearts.svg" width="80" alt="">
         </li>
         <li>
-            <img src="svg-loaders/oval.svg" width="50" alt="">
+            <svg id='oval' width="50" height="50" viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="24"/>
+                <path d="M25,1c13.254,0,24,10.746,24,24"/>
+            </svg>
         </li>
         <li>
             <img src="svg-loaders/three-dots.svg" width="60" alt="">
