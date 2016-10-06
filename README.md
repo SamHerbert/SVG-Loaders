@@ -4,7 +4,7 @@ All loaders may be previewed at:
 
 http://samherbert.net/svg-loaders
 
-NOTE: These loaders were originally built to only use SMIL animations; however, all animations have been updated with CSS animations. Since, starting with Chrome 45, the use of SMIL animations have been [deprecated](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/5o0yiO440LM/59rZqirUQNwJ) in Chrome browsers.
+NOTE: These loaders were originally built to only use SMIL animations; however, all animations have been updated with CSS animations. Since Chrome 45, the use of SMIL animations have been [deprecated](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/5o0yiO440LM/59rZqirUQNwJ) in Chrome browsers.
 
 The SMIL versions are still in included in this repo, but it is recommended to use the CSS version of a loader if you're planning on using it in a web browser.
 
