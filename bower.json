@@ -1,7 +1,7 @@
 {
   "name": "SVG-Loaders",
   "homepage": "https://github.com/SamHerbert/SVG-Loaders",
-  "description": "Loading icons and small animations built purely in SVG, no CSS or JS.",
+  "description": "Loading icons and small animations built with SVG and CSS.",
   "license": "MIT",
   "private": false,
   "ignore": [
@@ -16,6 +16,7 @@
   "keywords": [
     "progress",
     "svg",
+    "css",
     "loaders",
     "loading",
     "spinners",
