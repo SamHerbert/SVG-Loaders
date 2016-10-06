@@ -1,26 +1,30 @@
-<!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
-<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" stroke="#fff">
+<!-- By Sam Herbert (@sherb) - more @ http://goo.gl/7AJzbL -->
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
   <style type="text/css">
   <![CDATA[
-    #c1, #c2 {
-      animation: size cubic-bezier(0.165, 0.84, 0.44, 1) 1.8s, opacity cubic-bezier(0.3, 0.61, 0.355, 1) 1.8s;
-      animation-iteration-count: infinite;
-      transform-origin: 50% 50%;
-      opacity: 0;
+    g circle {
+      stroke: #fff;
+      stroke-width: 3;
     }
-    #c2 { animation-delay: 0.9s; }
-    @keyframes size{
+    g circle {
+      opacity: 0;
+      animation: size cubic-bezier(0.165, 0.84, 0.44, 1) 1.8s infinite,
+                 opacity cubic-bezier(0.3, 0.61, 0.355, 1) 1.8s infinite;
+      transform-origin: 50% 50%;
+    }
+    g circle:last-child { animation-delay: 0.9s; }
+    @keyframes size {
       0% { transform: scale(0); }
       100% { transform: scale(1); }
     }
-    @keyframes opacity{
-      15% { opacity: 1; }
+    @keyframes opacity {
+      5% { opacity: 1; }
       100% { opacity: 0; }
     }
   ]]>
   </style>
-  <g fill="none" fill-rule="evenodd" stroke-width="3">
-    <circle cx="22" cy="22" r="20" id="c1" ></circle>
-    <circle cx="22" cy="22" r="20" id="c2"></circle>
+  <g fill="none">
+    <circle cx="22" cy="22" r="20"></circle>
+    <circle cx="22" cy="22" r="20"></circle>
   </g>
 </svg>
