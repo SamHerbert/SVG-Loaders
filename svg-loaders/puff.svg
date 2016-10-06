@@ -1,37 +1,26 @@
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
-<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
-    <g fill="none" fill-rule="evenodd" stroke-width="2">
-        <circle cx="22" cy="22" r="1">
-            <animate attributeName="r"
-                begin="0s" dur="1.8s"
-                values="1; 20"
-                calcMode="spline"
-                keyTimes="0; 1"
-                keySplines="0.165, 0.84, 0.44, 1"
-                repeatCount="indefinite" />
-            <animate attributeName="stroke-opacity"
-                begin="0s" dur="1.8s"
-                values="1; 0"
-                calcMode="spline"
-                keyTimes="0; 1"
-                keySplines="0.3, 0.61, 0.355, 1"
-                repeatCount="indefinite" />
-        </circle>
-        <circle cx="22" cy="22" r="1">
-            <animate attributeName="r"
-                begin="-0.9s" dur="1.8s"
-                values="1; 20"
-                calcMode="spline"
-                keyTimes="0; 1"
-                keySplines="0.165, 0.84, 0.44, 1"
-                repeatCount="indefinite" />
-            <animate attributeName="stroke-opacity"
-                begin="-0.9s" dur="1.8s"
-                values="1; 0"
-                calcMode="spline"
-                keyTimes="0; 1"
-                keySplines="0.3, 0.61, 0.355, 1"
-                repeatCount="indefinite" />
-        </circle>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" stroke="#fff">
+  <style type="text/css">
+  <![CDATA[
+    #c1, #c2 {
+      animation: size cubic-bezier(0.165, 0.84, 0.44, 1) 1.8s, opacity cubic-bezier(0.3, 0.61, 0.355, 1) 1.8s;
+      animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+      opacity: 0;
+    }
+    #c2 { animation-delay: 0.9s; }
+    @keyframes size{
+      0% { transform: scale(0); }
+      100% { transform: scale(1); }
+    }
+    @keyframes opacity{
+      15% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  ]]>
+  </style>
+  <g fill="none" fill-rule="evenodd" stroke-width="3">
+    <circle cx="22" cy="22" r="20" id="c1" ></circle>
+    <circle cx="22" cy="22" r="20" id="c2"></circle>
+  </g>
 </svg>
