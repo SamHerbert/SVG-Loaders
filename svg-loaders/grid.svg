@@ -1,56 +1,32 @@
+<!-- By Sam Herbert (@sherb) - more @ http://goo.gl/7AJzbL -->
 <svg width="105" height="105" viewBox="0 0 105 105" xmlns="http://www.w3.org/2000/svg" fill="#fff">
-    <circle cx="12.5" cy="12.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="0s" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".5">
-        <animate attributeName="fill-opacity"
-         begin="100ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="52.5" cy="12.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="300ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="52.5" cy="52.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="600ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="92.5" cy="12.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="800ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="92.5" cy="52.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="400ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="12.5" cy="92.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="700ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="52.5" cy="92.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="500ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
-    <circle cx="92.5" cy="92.5" r="12.5">
-        <animate attributeName="fill-opacity"
-         begin="200ms" dur="1s"
-         values="1;.2;1" calcMode="linear"
-         repeatCount="indefinite" />
-    </circle>
+  <style type="text/css">
+  <![CDATA[
+    circle {
+      fill: #fff;
+      animation: fade 1s linear infinite;
+    }
+    circle:nth-child(2) { animation-delay: 100ms; }
+    circle:nth-child(3) { animation-delay: 300ms; }
+    circle:nth-child(4) { animation-delay: 600ms; }
+    circle:nth-child(5) { animation-delay: 800ms; }
+    circle:nth-child(6) { animation-delay: 400ms; }
+    circle:nth-child(7) { animation-delay: 600ms; }
+    circle:nth-child(8) { animation-delay: 600ms; }
+    circle:nth-child(9) { animation-delay: 200ms; }
+    @keyframes fade {
+      0%, 100% { fill-opacity: 1; }
+      50% { fill-opacity: 0.2; }
+    }
+  ]]>
+  </style>
+  <circle cx="12.5" cy="12.5" r="12.5"></circle>
+  <circle cx="12.5" cy="52.5" r="12.5"></circle>
+  <circle cx="52.5" cy="12.5" r="12.5"></circle>
+  <circle cx="52.5" cy="52.5" r="12.5"></circle>
+  <circle cx="92.5" cy="12.5" r="12.5"></circle>
+  <circle cx="92.5" cy="52.5" r="12.5"></circle>
+  <circle cx="12.5" cy="92.5" r="12.5"></circle>
+  <circle cx="52.5" cy="92.5" r="12.5"></circle>
+  <circle cx="92.5" cy="92.5" r="12.5"></circle>
 </svg>

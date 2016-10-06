@@ -1,52 +1,30 @@
-<svg width="135" height="140" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill="#fff">
-    <rect y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.5s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.5s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="30" y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.25s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.25s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="60" width="15" height="140" rx="6">
-        <animate attributeName="height"
-             begin="0s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="90" y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.25s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.25s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
-    <rect x="120" y="10" width="15" height="120" rx="6">
-        <animate attributeName="height"
-             begin="0.5s" dur="1s"
-             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
-             repeatCount="indefinite" />
-        <animate attributeName="y"
-             begin="0.5s" dur="1s"
-             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
-             repeatCount="indefinite" />
-    </rect>
+<svg width="135" height="140" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+  <![CDATA[
+    rect {
+      fill: #fff;
+      animation: growShrink 1.2s infinite;
+    }
+    rect:nth-child(2),rect:nth-child(6) { animation-delay: 500ms; }
+    rect:nth-child(odd) { animation-delay: 250ms; }
+    @keyframes growShrink {
+      0%    { height: 120px; y: 10; }
+      10%   { height: 110px; y: 15; }
+      20%   { height: 100px; y: 20; }
+      30%   { height: 90px;  y: 25; }
+      40%   { height: 80px;  y: 30; }
+      50%   { height: 70px;  y: 35; }
+      60%   { height: 60px;  y: 40; }
+      70%   { height: 50px;  y: 45; }
+      80%   { height: 40px;  y: 50; }
+      90%   { height: 140px;  y: 0; }
+      100%  { height: 120px;  y: 10; }
+    }
+  ]]>
+  </style>
+  <rect y="10" width="15" height="120" rx="6"></rect>
+  <rect x="30" y="10" width="15" height="120" rx="6"></rect>
+  <rect x="60" width="15" height="140" rx="6"></rect>
+  <rect x="90" y="10" width="15" height="120" rx="6"></rect>
+  <rect x="120" y="10" width="15" height="120" rx="6"></rect>
 </svg>
