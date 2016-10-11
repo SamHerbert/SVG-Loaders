@@ -112,6 +112,89 @@
             margin-top: 20px;
         }
 
+        svg {
+            vertical-align: middle;
+        }
+
+        svg#oval {
+            width: 50px;
+            height: 50px;
+            stroke-width: 2px;
+            fill: none;
+            stroke: #fff;
+        }
+
+        svg#oval > circle {
+            stroke-opacity: 0.5
+        }
+
+        @-webkit-keyframes ovalRoll { to { transform: rotate(360deg) } }
+        @-moz-keyframes    ovalRoll { to { transform: rotate(360deg) } }
+        @-o-keyframes      ovalRoll { to { transform: rotate(360deg) } }
+        @keyframes         ovalRoll { to { transform: rotate(360deg) } }
+
+        svg#oval > path {
+            -webkit-animation: ovalRoll 1s infinite linear;
+            -moz-animation:    ovalRoll 1s infinite linear;
+            -o-animation:      ovalRoll 1s infinite linear;
+            animation:         ovalRoll 1s infinite linear;
+            transform-origin: left bottom;
+        }
+
+        svg#circles {
+            fill: #fff;
+            width: 50px;
+            height: 50px;
+        }
+
+        svg#circles > path {
+            transform-origin: center;
+        }
+
+        @-webkit-keyframes dotRoll1 { to { transform: rotate(-360deg) } }
+        @-moz-keyframes    dotRoll1 { to { transform: rotate(-360deg) } }
+        @-o-keyframes      dotRoll1 { to { transform: rotate(-360deg) } }
+        @keyframes         dotRoll1 { to { transform: rotate(-360deg) } }
+
+        @-webkit-keyframes dotRoll2 { to { transform: rotate(360deg) } }
+        @-moz-keyframes    dotRoll2 { to { transform: rotate(360deg) } }
+        @-o-keyframes      dotRoll2 { to { transform: rotate(360deg) } }
+        @keyframes         dotRoll2 { to { transform: rotate(360deg) } }
+
+        svg#circles > path:first-child {
+            -webkit-animation: dotRoll1 2.5s linear infinite;
+            -moz-animation:    dotRoll1 2.5s linear infinite;
+            -o-animation:      dotRoll1 2.5s linear infinite;
+            animation:         dotRoll1 2.5s linear infinite;
+        }
+        svg#circles > path:last-child {
+            -webkit-animation: dotRoll2 8s linear infinite;
+            -moz-animation:    dotRoll2 8s linear infinite;
+            -o-animation:      dotRoll2 8s linear infinite;
+            animation:         dotRoll2 8s linear infinite;
+        }
+
+
+        @-webkit-keyframes heartFlash { 0%, 100% { opacity: 0.5 } 50% { opacity: 1 } }
+        @-moz-keyframes    heartFlash { 0%, 100% { opacity: 0.5 } 50% { opacity: 1 } }
+        @-o-keyframes      heartFlash { 0%, 100% { opacity: 0.5 } 50% { opacity: 1 } }
+        @keyframes         heartFlash { 0%, 100% { opacity: 0.5 } 50% { opacity: 1 } }
+
+        svg#hearts {
+            width: 80px;
+            fill: #fff;
+        }
+        svg#hearts > path:first-child,
+        svg#hearts > path:last-child {
+            opacity: 0.5;
+            -webkit-animation: heartFlash 1.4s linear infinite;
+            -moz-animation:    heartFlash 1.4s linear infinite;
+            -o-animation:      heartFlash 1.4s linear infinite;
+            animation:         heartFlash 1.4s linear infinite;
+        }
+        svg#hearts > path:last-child {
+            animation-delay: 0.7s;
+        }
     </style>
 </head>
 
@@ -127,10 +210,17 @@
             <img src="svg-loaders/grid.svg" width="40" alt="">
         </li>
         <li>
-            <img src="svg-loaders/hearts.svg" width="80" alt="">
+            <svg id='hearts' width="140" height="64" viewBox="0 0 140 64">
+                <path d="M30.262 57.02L7.195 40.723c-5.84-3.976-7.56-12.06-3.842-18.063 3.715-6 11.467-7.65 17.306-3.68l4.52 3.76 2.6-5.274c3.717-6.002 11.47-7.65 17.305-3.68 5.84 3.97 7.56 12.054 3.842 18.062L34.49 56.118c-.897 1.512-2.793 1.915-4.228.9z" ></path>
+                <path d="M67.408 57.834l-23.01-24.98c-5.864-6.15-5.864-16.108 0-22.248 5.86-6.14 15.37-6.14 21.234 0L70 16.168l4.368-5.562c5.863-6.14 15.375-6.14 21.235 0 5.863 6.14 5.863 16.098 0 22.247l-23.007 24.98c-1.43 1.556-3.757 1.556-5.188 0z" />
+                <path d="M105.512 56.12l-14.44-24.272c-3.716-6.008-1.996-14.093 3.843-18.062 5.835-3.97 13.588-2.322 17.306 3.68l2.6 5.274 4.52-3.76c5.84-3.97 13.592-2.32 17.307 3.68 3.718 6.003 1.998 14.088-3.842 18.064L109.74 57.02c-1.434 1.014-3.33.61-4.228-.9z" ></path>
+            </svg>
         </li>
         <li>
-            <img src="svg-loaders/oval.svg" width="50" alt="">
+            <svg id='oval' width="50" height="50" viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="24"/>
+                <path d="M25,1c13.254,0,24,10.746,24,24"/>
+            </svg>
         </li>
         <li>
             <img src="svg-loaders/three-dots.svg" width="60" alt="">
@@ -142,7 +232,10 @@
             <img src="svg-loaders/puff.svg" width="50" alt="">
         </li>
         <li>
-            <img src="svg-loaders/circles.svg" width="50" alt="">
+            <svg id="circles" width="135" height="135" viewBox="0 0 135 135">
+                <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z"></path>
+                <path d="M28.19 40.31c6.627 0 12-5.374 12-12 0-6.628-5.373-12-12-12-6.628 0-12 5.372-12 12 0 6.626 5.372 12 12 12zm30.72-19.825c4.686 4.687 12.284 4.687 16.97 0 4.686-4.686 4.686-12.284 0-16.97-4.686-4.687-12.284-4.687-16.97 0-4.687 4.686-4.687 12.284 0 16.97zm35.74 7.705c0 6.627 5.37 12 12 12 6.626 0 12-5.373 12-12 0-6.628-5.374-12-12-12-6.63 0-12 5.372-12 12zm19.822 30.72c-4.686 4.686-4.686 12.284 0 16.97 4.687 4.686 12.285 4.686 16.97 0 4.687-4.686 4.687-12.284 0-16.97-4.685-4.687-12.283-4.687-16.97 0zm-7.704 35.74c-6.627 0-12 5.37-12 12 0 6.626 5.373 12 12 12s12-5.374 12-12c0-6.63-5.373-12-12-12zm-30.72 19.822c-4.686-4.686-12.284-4.686-16.97 0-4.686 4.687-4.686 12.285 0 16.97 4.686 4.687 12.284 4.687 16.97 0 4.687-4.685 4.687-12.283 0-16.97zm-35.74-7.704c0-6.627-5.372-12-12-12-6.626 0-12 5.373-12 12s5.374 12 12 12c6.628 0 12-5.373 12-12zm-19.823-30.72c4.687-4.686 4.687-12.284 0-16.97-4.686-4.686-12.284-4.686-16.97 0-4.687 4.686-4.687 12.284 0 16.97 4.686 4.687 12.284 4.687 16.97 0z"></path>
+            </svg>
         </li>
         <li>
             <img src="svg-loaders/tail-spin.svg" width="50" alt="">
