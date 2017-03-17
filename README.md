@@ -8,7 +8,7 @@ NOTE: Chrome 45 intended to deprecate SMIL icons but has since [suspended](https
 
 Usage
 ===========
-[Download](https://github.com/SamHerbert/SVG-Loaders/archive/master.zip) or `bower install svg-loaders`
+[Download](https://github.com/SamHerbert/SVG-Loaders/archive/master.zip) or `bower install svg-loaders` or use `gem 'svgloaders'` for rails.
 
 ```html
 <img src="svg-loaders/puff.svg" />
@@ -25,3 +25,4 @@ Note: Not all browsers support SVG, or more specifically, animated SVGs. Check (
 Minify
 ===========
 All SVG files are fairly small in size, but you can make them even smaller by minifying with something like [SVGO](https://github.com/svg/svgo).
+
