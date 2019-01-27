@@ -26,7 +26,7 @@ Minify
 ===========
 All SVG files are fairly small in size, but you can make them even smaller by minifying with something like [SVGO](https://github.com/svg/svgo).
 
-Other Implementations
+Adaptations
 ===========
 
 [React components by ajwann](https://github.com/ajwann/svg-loaders-react)
