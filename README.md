@@ -30,4 +30,5 @@ Adaptations
 ===========
 
 [React components by ajwann](https://github.com/ajwann/svg-loaders-react)
+[Vue components by safei muslim](https://github.com/safeimuslim/vue-loading-components)
 
