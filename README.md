@@ -4,7 +4,9 @@ All loaders may be previewed at:
 
 http://samherbert.net/svg-loaders
 
-NOTE: Chrome 45 intended to deprecate SMIL icons but has since [suspended](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/5o0yiO440LM%5B126-150%5D) that deprecation.
+_Notes:_\
+_Chrome 45 intended to deprecate SMIL icons but has since [suspended](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/5o0yiO440LM%5B126-150%5D) that deprecation.\
+As of Jan 15, 2020, all web browsers[*](http://caniuse.com/#feat=svg-smil) support SVG, or more specifically, animated SVGs._
 
 Usage
 ===========
@@ -19,8 +21,6 @@ An icon's color can be manipulated by changing the `fill` attribute in the SVG f
 ```html
 <svg fill="#fff" width="140" height="64" viewBox="0 0 140 64" xmlns="http://www.w3.org/2000/svg">
 ```
-
-Note: As of Jan 15, 2020, all browsers[*](http://caniuse.com/#feat=svg-smil) support SVG, or more specifically, animated SVGs.
 
 Minify
 ===========
