@@ -30,4 +30,4 @@ Adaptations
 ===========
 
 [React components by ajwann](https://github.com/ajwann/svg-loaders-react)
-
+[Svelte components by rdgco](http://github.com/rodgco/svg-loaders-svelte)
