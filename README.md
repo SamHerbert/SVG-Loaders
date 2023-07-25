@@ -4,7 +4,7 @@ All loaders may be previewed at:
 
 http://samherbert.net/svg-loaders
 
-NOTE: Chrome 45 intended to deprecate SMIL icons but has since [suspended](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/5o0yiO440LM%5B126-150%5D) that deprecation.
+NOTE: Chrome 45 intended to deprecate SMIL icons but has since [suspended](https://groups.google.com/a/chromium.org/g/blink-dev/c/5o0yiO440LM/m/mHtmsQxf2bIJ) that deprecation.
 
 Usage
 ===========
